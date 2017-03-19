@@ -2,6 +2,7 @@
 
 namespace Basal\Middleware;
 
+use Basal\Middleware\Exception\EmptyStackException;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -18,6 +19,8 @@ interface MiddlewareDispatcherInterface
      * @param MiddlewareInterface[] $stack
      *
      * @return ResponseInterface
+     *
+     * @throws EmptyStackException
      */
     public function dispatch(ServerRequestInterface $request, array $stack);
 }
