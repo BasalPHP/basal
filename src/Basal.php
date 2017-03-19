@@ -12,7 +12,7 @@ use Psr\Http\Message\ServerRequestInterface;
 /**
  * Class Basal.
  */
-final class Basal implements BasalInterface
+class Basal implements BasalInterface
 {
     /** @var MiddlewareDispatcherInterface */
     private $dispatcher;
