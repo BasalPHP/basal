@@ -48,7 +48,10 @@ class Basal implements BasalInterface
      */
     public function run()
     {
-        $request = $this->requestFactory->createServerRequest($_SERVER);
+        $request = $this->requestFactory
+            ->createServerRequest($_SERVER)
+            ->withQueryParams($_GET);
+
         $this->send($this->handleRequest($request));
     }
 
