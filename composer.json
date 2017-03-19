@@ -1,0 +1,18 @@
+{
+    "name": "basal/basal",
+    "description": "Basic server request middleware application wrapper with PSR-7, PSR-11 and PSR-15 support",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Basal",
+            "email": "basal.php@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Basal\\": "src/"
+        }
+    },
+    "require": {}
+}
