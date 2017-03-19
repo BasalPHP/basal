@@ -24,7 +24,7 @@ class Basal implements BasalInterface
     private $requestFactory;
 
     /** @var MiddlewareInterface[] */
-    private $stack;
+    private $stack = [];
 
     /**
      * Basal constructor.
